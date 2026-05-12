@@ -23,6 +23,7 @@ export function GET() {
         },
         media_folder: 'public/assets',
         public_folder: '/assets',
+        load_config_file: false,
         site_url: 'https://octrawallet.com',
         collections: [
           {
