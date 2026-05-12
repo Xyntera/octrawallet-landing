@@ -1,11 +1,11 @@
 backend:
   name: github
-  repo: Xyntera/Octra-Wallet
+  repo: Xyntera/octrawallet-landing
   branch: main
   base_url: https://octrawallet.com
   auth_endpoint: api/auth
 
-media_folder: landing/public/assets
+media_folder: public/assets
 public_folder: /assets
 
 site_url: https://octrawallet.com
@@ -15,7 +15,7 @@ logo_url: https://octrawallet.com/assets/owl-logo.png
 collections:
   - name: blog
     label: Blog Posts
-    folder: landing/content/blog
+    folder: content/blog
     create: true
     slug: "{{slug}}"
     fields:
@@ -31,7 +31,7 @@ collections:
 
   - name: docs
     label: Documentation
-    folder: landing/content/docs
+    folder: content/docs
     create: true
     slug: "{{slug}}"
     fields:
@@ -43,7 +43,7 @@ collections:
 
   - name: changelog
     label: Changelog
-    folder: landing/content/changelog
+    folder: content/changelog
     create: true
     slug: "{{version}}"
     fields:
