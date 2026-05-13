@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Outfit, IBM_Plex_Mono } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import RevealObserver from '@/components/RevealObserver';
 import './globals.css';
 
 const outfit = Outfit({
@@ -57,6 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <Header />
+        <RevealObserver />
         {children}
         <Footer />
       </body>
