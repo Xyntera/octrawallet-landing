@@ -14,7 +14,7 @@ export default config({
       label: 'Blog Posts',
       slugField: 'title',
       path: 'content/blog/*',
-      format: { frontmatter: 'yaml' },
+      format: { data: 'yaml', contentField: 'body' },
       schema: {
         title: fields.slug({ name: { label: 'Title' } }),
         date: fields.date({ label: 'Date' }),
@@ -31,7 +31,7 @@ export default config({
       label: 'Documentation',
       slugField: 'title',
       path: 'content/docs/*',
-      format: { frontmatter: 'yaml' },
+      format: { data: 'yaml', contentField: 'body' },
       schema: {
         title: fields.slug({ name: { label: 'Title' } }),
         description: fields.text({ label: 'Description', multiline: true }),
@@ -44,7 +44,7 @@ export default config({
       label: 'Changelog',
       slugField: 'version',
       path: 'content/changelog/*',
-      format: { frontmatter: 'yaml' },
+      format: { data: 'yaml', contentField: 'body' },
       schema: {
         version: fields.slug({ name: { label: 'Version' } }),
         date: fields.date({ label: 'Date' }),
