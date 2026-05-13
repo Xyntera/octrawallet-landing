@@ -22,7 +22,7 @@ export default config({
         author: fields.text({ label: 'Author', defaultValue: 'Glaqz' }),
         tags: fields.array(fields.text({ label: 'Tag' }), {
           label: 'Tags',
-          itemLabel: (props) => props.fields.value.value || 'Tag',
+          itemLabel: (props) => String(props.value) || 'Tag',
         }),
         body: fields.markdoc({ label: 'Body' }),
       },
