@@ -111,6 +111,8 @@ export default function AdminPage() {
     }
   }
 
+  function logout() { setToken(''); setPwd(''); setView('login'); setErr(''); setOk(''); }
+
   function fm(key: string, val: unknown) {
     setEditor(p => p ? { ...p, frontmatter: { ...p.frontmatter, [key]: val } } : null);
   }
@@ -135,11 +137,14 @@ export default function AdminPage() {
     <div style={S.page}>
       <header style={S.header}>
         <span style={S.logo}>Octra CMS</span>
-        <nav style={S.navRow}>
-          {(['blog', 'docs', 'changelog'] as Col[]).map(c => (
-            <button key={c} style={S.tab(col === c)} onClick={() => loadFiles(c)}>{COL_LABELS[c]}</button>
-          ))}
-        </nav>
+        <div style={S.actions}>
+          <nav style={S.navRow}>
+            {(['blog', 'docs', 'changelog'] as Col[]).map(c => (
+              <button key={c} style={S.tab(col === c)} onClick={() => loadFiles(c)}>{COL_LABELS[c]}</button>
+            ))}
+          </nav>
+          <button style={S.btnGhost} onClick={logout}>Sign out</button>
+        </div>
       </header>
       <div style={S.main}>
         <div style={S.topbar}>
@@ -169,6 +174,7 @@ export default function AdminPage() {
             {ok && <span style={S.ok}>{ok}</span>}
             {err && <span style={S.err}>{err}</span>}
             <button style={S.btnGhost} onClick={() => loadFiles(col)}>← Back</button>
+            <button style={S.btnGhost} onClick={logout}>Sign out</button>
             <button style={S.btn} onClick={save} disabled={saving}>{saving ? 'Saving…' : 'Save'}</button>
           </div>
         </header>
