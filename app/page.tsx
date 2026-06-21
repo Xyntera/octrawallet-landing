@@ -28,7 +28,7 @@ const faqs = [
   { q: 'What is PVAC and why does it matter?', a: "PVAC (Private Value and Computation) is Octra's on-chain privacy system. It lets you encrypt OCT into a private shielded balance and send stealth transfers that only the recipient can discover. Octra Wallet runs PVAC proofs natively on your phone — no cloud, no server." },
   { q: 'Is Octra Wallet safe? Who holds my keys?', a: 'Fully non-custodial. Your private keys and seed phrase never leave your device. They are stored in Android\'s encrypted secure storage. The full source is auditable on GitHub and every APK is built by public CI.' },
   { q: 'Does Octra Wallet support multiple wallets?', a: 'Yes — create, import, or add watch-only wallets. Each has its own name, colour, and history. Switching is instant and all data is scoped to the active wallet.' },
-  { q: 'What is the Portfolio tab?', a: 'Added in v1.0.2. It shows your total OCT holdings in USD at the live CoinGecko price, an interactive 7-day OCT/USD chart, 24h change badge, and individual wallet USD breakdowns.' },
+  { q: 'What is the Portfolio tab?', a: 'Added in v1.2.0. It shows your total OCT holdings in USD at the live CoinGecko price, an interactive 7-day OCT/USD chart, 24h change badge, and individual wallet USD breakdowns.' },
   { q: 'Which Android versions are supported?', a: 'Android 6.0 (API 23) and above. The APK ships as arm64-v8a + x86_64 fat binary — covering virtually all modern Android phones and tablets.' },
   { q: 'How do I back up my wallet?', a: 'Tap the menu icon (top-right) on the Home tab → Export. Copy your private key or 12-word seed phrase and store it offline. There is no recovery option if you lose it.' },
   { q: 'Will Octra Wallet be on the Google Play Store?', a: 'Play Store distribution is planned. For now, sideload the APK from GitHub Releases. It is signed, CI-built, and production-ready.' },
@@ -54,7 +54,7 @@ export default function HomePage() {
         {/* ── Hero ── */}
         <section className="hero section-shell reveal" aria-labelledby="hero-heading">
           <div className="hero-copy">
-            <span className="eyebrow">Free · Open-source · Android · v1.0.2</span>
+            <span className="eyebrow">Free · Open-source · Android · v1.2.0</span>
             <h1 id="hero-heading">The Octra Wallet.<br />Private by default.<br />Yours forever.</h1>
             <p className="hero-lede">
               Download the only Android wallet that runs <strong>native PVAC privacy operations</strong>{' '}
@@ -63,9 +63,9 @@ export default function HomePage() {
             </p>
             <div className="hero-actions">
               <a className="button button-primary" href={APK_URL} target="_blank" rel="noreferrer noopener"
-                aria-label="Download Octra Wallet v1.0.2 APK for Android">
+                aria-label="Download Octra Wallet v1.2.0 APK for Android">
                 <Download aria-hidden="true" />
-                Download v1.0.2 — Free
+                Download v1.2.0 — Free
               </a>
               <a className="button button-ghost" href="https://github.com/Xyntera/Octra-Wallet" target="_blank" rel="noreferrer noopener">
                 <Github aria-hidden="true" />
@@ -74,7 +74,7 @@ export default function HomePage() {
             </div>
             <div className="release-strip">
               <span className="badge badge-green">Latest</span>
-              <span className="mono">v1.0.2</span>
+              <span className="mono">v1.2.0</span>
               <span className="sep">·</span>
               <span>Android 6.0+</span>
               <span className="sep">·</span>
@@ -142,7 +142,7 @@ export default function HomePage() {
         {/* ── Screenshots ── */}
         <section className="section-shell screenshots-section reveal" id="screenshots" aria-labelledby="ss-heading">
           <div className="section-heading">
-            <span className="eyebrow">App screenshots · v1.0.2</span>
+            <span className="eyebrow">App screenshots · v1.2.0</span>
             <h2 id="ss-heading">Every screen, as it really looks.</h2>
             <p>Real screenshots from the production APK — not mockups.</p>
           </div>
