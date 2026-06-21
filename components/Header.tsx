@@ -53,7 +53,7 @@ export default function Header() {
         </a>
         <a
           className="nav-cta"
-          href="https://github.com/Xyntera/Octra-Wallet/releases/download/v1.0.2/Octra-Wallet-v1.0.2-android.apk"
+          href="https://github.com/Xyntera/Octra-Wallet/releases/download/v1.2.0/Octra-Wallet-v1.2.0-android.apk"
           target="_blank"
           rel="noreferrer noopener"
           onClick={() => setOpen(false)}
