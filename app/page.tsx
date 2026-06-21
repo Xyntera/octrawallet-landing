@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 };
 
 const APK_URL =
-  'https://github.com/Xyntera/Octra-Wallet/releases/download/v1.0.2/Octra-Wallet-v1.0.2-android.apk';
+  'https://github.com/Xyntera/Octra-Wallet/releases/download/v1.2.0/Octra-Wallet-v1.2.0-android.apk';
 
 const faqs = [
   { q: 'What is Octra Wallet?', a: 'Octra Wallet is a free, open-source Android mobile wallet for the Octra (OCT) cryptocurrency network. It bundles native PVAC privacy libraries directly in the APK so all privacy operations run locally — no server needed.' },
@@ -215,7 +215,7 @@ export default function HomePage() {
               <div className="step-num-big" aria-hidden="true">1</div>
               <div className="feature-icon-wrap" aria-hidden="true"><Download /></div>
               <h3>Download the APK</h3>
-              <p>Tap the button below to download <span className="mono">Octra-Wallet-v1.0.2-android.apk</span> directly from GitHub Releases.</p>
+              <p>Tap the button below to download <span className="mono">Octra-Wallet-v1.2.0-android.apk</span> directly from GitHub Releases.</p>
               <a className="button button-primary" href={APK_URL} target="_blank" rel="noreferrer noopener" style={{ marginTop: 'auto' }}>
                 <Download aria-hidden="true" />
                 Download APK
