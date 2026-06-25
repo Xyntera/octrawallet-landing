@@ -7,14 +7,6 @@ tags: []
 ---
 ---
 
-## title: Octra Wallet v1.2.0: Desktop Arrives with Production-Ready Signing date: 2026-06-25 description: "" author: Glaqz tags: \[\]
-
----
-
-## title: Octra Wallet v1.2.0: Desktop Arrives with Production-Ready Signing date: 2026-06-25 description: "" author: Glaqz tags: \[\]
-
----
-
 # Octra Wallet v1.2.0: Desktop Arrives with Production-Ready Signing
 
 **June 18, 2026** — We're excited to announce Octra Wallet v1.2.0, a major milestone that brings the non-custodial privacy wallet to Windows, macOS, and Linux with proper production builds.
