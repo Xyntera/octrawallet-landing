@@ -1,5 +1,5 @@
 ---
-title: null
+title: Octra wallet update 
 date: 2026-06-25
 description: ""
 author: Glaqz
